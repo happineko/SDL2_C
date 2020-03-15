@@ -1,3 +1,5 @@
 SDL2 Réponses aux questions :
 
-1.Simple DirectMedia Layer ou SDL est une bibliothèque logicielle, elle est utilisée pour créer des applications multimédias en 2D comme par exemple des jeux vidéos
+1. Simple DirectMedia Layer ou SDL est une bibliothèque logicielle, elle est utilisée pour créer des applications multimédias en 2D comme par exemple des jeux vidéos
+
+2. La SDL permet de créer des application multimédias, elle peut gérer l'affichage vidéo, les evenement (pression d'une touche par exemple), l'audio, gestion de periphérique, lecture de CD audio, le multithreading, l'utilisation des timers

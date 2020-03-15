@@ -29,3 +29,29 @@ SDL2 Réponses aux questions :
 	- Dans l'onglet "Linker" ajouter le chemin des libs de la SDL2 ..\CodeBlocks\MinGW\SDL2-2.0.12\i686-w64-mingw32\lib
 
 - Dans le dossier du projet, glisser une copie de SDL2.dll
+
+5. Voici les fonctionnalités les plus importantes dans la SDL 2.0 :
+
+	accélération matérielle 3D complète
+	support d'OpenGL 3.0 et supérieur
+	support d'OpenGL ES
+	support de multiples fenêtres
+	support de multiples moniteurs
+	support de multiples périphériques audio
+	support d'Android et iOS
+	bibliothèque de rendus simple 2D pouvant utiliser Direct3D, OpenGL, OpenGL ES ou un rendu logiciel
+	retour de force disponible sur Windows, Mac OS X et Linux
+	support de XInput et XAudio 2 pour Windows
+	gestion de l'énergie (indique l'autonomie de la batterie, etc.)
+	fenêtre aux formes personnalisées
+	audio 32 bits
+	bibliothèque simplifiée pour les manettes de jeu
+	support du toucher (multi-touch, mouvements, etc.)
+	meilleur support du mode plein écran
+	meilleur support du clavier (scancodes VS keycodes, etc.)
+	boîtes de messages
+	support du presse-papier
+	support basique du glisser/déposer
+	support correct des entrées Unicode et IME
+
+

@@ -5,3 +5,27 @@ SDL2 Réponses aux questions :
 2. La SDL2 permet de créer des application multimédias, elle peut gérer l'affichage vidéo, les evenement (pression d'une touche par exemple), l'audio, gestion de periphérique, lecture de CD audio, le multithreading, l'utilisation des timers
 
 3. La SDL2 est utilisable sur plusieurs systèmes tel que Windows, Mac OS X, Linux, Android
+
+4. Pour obtenir et installer la SDL2 il faut :
+
+- Telecharger le fichier DLL et les libs sur le site de SDL (https://www.libsdl.org/download-2.0.php)
+	RMQ : Pour une meilleure compatibilité il faut télécharger la version 32 bits
+
+- Telecharger CodeBlocks si cela n'est pas deja fait
+
+- Extraire le dossier lib SDL2 dans le dossier MinGW de CodeBlocks
+
+- Créer un nouveau projet sur CodeBlocks (dans notre cas en C)
+
+- Sur le projet aller dans "Build option"
+
+- Dans l'onglet "Linker settings" ajouter les chemins suivants (Attention l'ordre est important):
+	- ..\CodeBlocks\MinGW\lib\libmingw32.a
+	- ..\CodeBlocks\MinGW\SDL2-2.0.12\i686-w64-mingw32\lib\libSDL2main.a
+	- ..\CodeBlocks\MinGW\SDL2-2.0.12\i686-w64-mingw32\lib\libSDL2.dll.a
+
+- Dans l'onglet "Search directories" :
+	- Dans l'onglet "Compiler" ajouter le chemin include de la SDL2 ..\CodeBlocks\MinGW\SDL2-2.0.12\i686-w64-mingw32\include
+	- Dans l'onglet "Linker" ajouter le chemin des libs de la SDL2 ..\CodeBlocks\MinGW\SDL2-2.0.12\i686-w64-mingw32\lib
+
+- Dans le dossier du projet, glisser une copie de SDL2.dll

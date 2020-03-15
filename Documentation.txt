@@ -56,3 +56,5 @@ SDL2 Réponses aux questions :
 
 6. (Cf SDL2.c)
 
+7. (Cf SDL2.c)
+

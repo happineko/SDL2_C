@@ -54,4 +54,5 @@ SDL2 Réponses aux questions :
 	support basique du glisser/déposer
 	support correct des entrées Unicode et IME
 
+6. (Cf SDL2.c)
 

@@ -89,4 +89,6 @@ SDL2 Réponses aux questions :
 
 11. On gère la couleur avec la fonction SDL_Color qui attend comme parametre une couleur rouge(0-255) vert (0-255) bleu (0-255) et une transparence (0-255), on peut utiliser la fonction SDL_SetRenderDrawColor pour definir une couleur pour dessiner
 
-12 (Cf SDL2.c)
+12. (Cf SDL2.c)
+
+13. (Cf SDL2.c)

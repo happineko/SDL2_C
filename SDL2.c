@@ -123,12 +123,14 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
             SDL_RenderDrawRect(renderer, &carV);
             SDL_RenderPresent(renderer);
 
-
             SDL_Delay(3000); //On attend trois secondes, que l'utilisateur voit la fenêtre
 
-            surface = NULL; //Initialisation de la surface a NULL
+            SDL_RenderClear(renderer);
+            SDL_RenderPresent(renderer);
 
+            surface = SDL_CreateRGBSurface(0, nLargeur, nHauteur, 32, 0, 0, 0, 0); //Creation de la surface
 
+            SDL_Delay(3000);
 
         if(renderer == NULL)//gestion des erreurs
         {

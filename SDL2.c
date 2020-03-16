@@ -1,4 +1,4 @@
-//Question 13
+//Question 18
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -83,6 +83,7 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
         SDL_Renderer* renderer;//Déclaration du renderer
         SDL_Point cercleV, cercleP; //On déclare un point qu'on pourra utiliser plus tard dans le programme
         SDL_Rect rectangle, carV, carP; //On declare un rectangle qu'on pourra utiliser plus tard dans le programme
+        SDL_Surface *surface; //Déclaration d'une surface
         int nLargeur=1280;
         int nHauteur=720;
 
@@ -124,6 +125,10 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
 
 
             SDL_Delay(3000); //On attend trois secondes, que l'utilisateur voit la fenêtre
+
+            surface = NULL; //Initialisation de la surface a NULL
+
+
 
         if(renderer == NULL)//gestion des erreurs
         {

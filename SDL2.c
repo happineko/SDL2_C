@@ -1,4 +1,4 @@
-//Question 23
+//Question 25
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -135,6 +135,7 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
             texture = SDL_CreateTexture(renderer,SDL_PIXELFORMAT_RGBA32,SDL_TEXTUREACCESS_TARGET,nLargeur,nHauteur); //Creation de la texture
             SDL_SetRenderTarget(renderer,texture); //On definit la texture a rendre
             SDL_RenderCopy(renderer,texture,NULL,&rTemp); //On copie la texture dans un autre rectangle
+            SDL_LoadBMP("duck.bmp");
 
             SDL_Delay(3000);
 

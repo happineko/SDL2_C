@@ -108,3 +108,5 @@ SDL2 Réponses aux questions :
 20. (Cf SDL2.c)
 
 21. Une texture, au meme titre qu'une surface est un tableau de pixel sauf qu'on pourra afficher ce tableau
+
+22. (Cf SDL2.c)

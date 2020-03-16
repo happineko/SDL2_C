@@ -1,4 +1,4 @@
-//Question 20
+//Question 22
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -133,6 +133,7 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
             SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 0, 255, 0)); //On dessine dans la surface
             SDL_BlitSurface(surface, &rectangle, temp, NULL);
             texture = SDL_CreateTexture(renderer,SDL_PIXELFORMAT_RGBA32,SDL_TEXTUREACCESS_TARGET,nLargeur,nHauteur); //Creation de la texture
+            SDL_SetRenderTarget(renderer,texture);
 
             SDL_Delay(3000);
 

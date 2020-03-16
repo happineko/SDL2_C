@@ -87,4 +87,4 @@ SDL2 Réponses aux questions :
 
 10. SDL_Point sert a créer un point en 2D, et SDL_Rect sert a créer une forme rectangulaire, ce sont tous les deux des types
 
-11. On gère la couleur avec la fonction SDL_Color qui attend comme parametre une couleur rouge(0-255) vert (0-255) bleu (0-255) et une transparence (0-255)
+11. On gère la couleur avec la fonction SDL_Color qui attend comme parametre une couleur rouge(0-255) vert (0-255) bleu (0-255) et une transparence (0-255), on peut utiliser la fonction SDL_SetRenderDrawColor pour definir une couleur pour dessiner

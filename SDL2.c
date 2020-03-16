@@ -1,4 +1,4 @@
-//Question 7
+//Question 9
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -16,9 +16,10 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
     {
         /* Création de la fenêtre */
         SDL_Window* pWindow = NULL; //On crée une variable fenetre de type SDL_Window
+        SDL_Renderer* renderer;//Déclaration du renderer
 
         //Pour créer la fentre on utilise la fonction SDL_CreateWindow qui attend en parametre un nom,une position x, une position y, une largeur, une hauteur et un ou plusieurs flags (disponible sur le site de SDL dans ce cas la on veut just afficher la fenêtre)
-        pWindow = SDL_CreateWindow("Fenêtre SDL2",SDL_WINDOWPOS_UNDEFINED,
+        pWindow = SDL_CreateWindow("Fenetre SDL2",SDL_WINDOWPOS_UNDEFINED,
                                                                   SDL_WINDOWPOS_UNDEFINED,
                                                                   640,
                                                                   480,
@@ -27,8 +28,16 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
         if( pWindow ) //si la fenetre a bien été créee
         {
             SDL_Delay(3000); //On attend trois secondes, que l'utilisateur voit la fenêtre
+            renderer = SDL_CreateRenderer(pWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC); // Création du renderer
+
+        if(renderer == NULL)//gestion des erreurs
+        {
+            printf("Erreur lors de la creation d'un renderer : %s",SDL_GetError());
+            return EXIT_FAILURE;
+        }
 
             SDL_DestroyWindow(pWindow); //On "détruit" la fenetre
+            SDL_DestroyRenderer(renderer);
         }
         else
         {

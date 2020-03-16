@@ -116,3 +116,5 @@ SDL2 Réponses aux questions :
 24.
 
 25. (Cf SDL2.c)
+
+26,27. (Cf SDL2.c)

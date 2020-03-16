@@ -1,4 +1,4 @@
-//Question 18
+//Question 19
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -129,6 +129,7 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
             SDL_RenderPresent(renderer);
 
             surface = SDL_CreateRGBSurface(0, nLargeur, nHauteur, 32, 0, 0, 0, 0); //Creation de la surface
+            SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 0, 0, 0)); //On dessine dans la surface
 
             SDL_Delay(3000);
 

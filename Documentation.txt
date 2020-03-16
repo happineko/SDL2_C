@@ -100,3 +100,7 @@ SDL2 Réponses aux questions :
 16. La fonction SDL_Delay(ms) est une fonction qui va mettre en pause le programme d'une durée donnée par l'utilisateur (en millisecondes)
 
 17. Une surface est un tableau de pixel qu'on peut manipuler un par un
+
+18. (Cf SDL2.c)
+
+19. (Cf SDL2.c)

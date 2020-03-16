@@ -58,3 +58,27 @@ SDL2 Réponses aux questions :
 
 7. (Cf SDL2.c)
 
+8. 
+SDL_CreateWindow() : Crée une fenêtre
+SDL_CreateWindowFrom() : Crée une fenêtre SDL à partir d'une fenêtre déjà existante
+SDL_DestroyWindow() : Détruit une fenêtre
+SDL_GetWindowData() : Récupère les données utilisateur associées à la fenêtre
+SDL_GetWindowFlags() : Récupère les options actuelles de la fenêtre
+SDL_GetWindowGrab() : Détermine si la fenêtre a le focus clavier
+SDL_GetWindowPosition() : Récupère la position actuelle de la fenêtre
+SDL_GetWindowSize() : Récupère la taille actuelle de la fenêtre
+SDL_GetWindowTitle() : Récupère le titre actuel de la fenêtre
+SDL_HideWindow() : Cache la fenêtre
+SDL_MaximizeWindow() : Agrandit la fenêtre
+SDL_MinimizeWindow() : Réduit la fenêtre dans la barre des tâches
+SDL_RaiseWindow() : Place la fenêtre devant les autres
+SDL_RestoreWindow() : Restaure la taille et la position d'une fenêtre minimisée ou maximisée
+SDL_SetWindowData() : Définit les données utilisateur de la fenêtre
+SDL_SetWindowFullscreen() : Passe la fenêtre en plein écran
+SDL_SetWindowGrab() : Donne le focus clavier à cette fenêtre
+SDL_SetWindowIcon() : Définit l'icône de la fenêtre
+SDL_SetWindowPosition() : Définit la position de la fenêtre
+SDL_SetWindowSize() : Définit la taille de la fenêtre
+SDL_SetWindowBordered() : Définit l'affichage des bordures de la fenêtre
+SDL_SetWindowTitle() : Définit le titre de la fenêtre
+SDL_ShowWindow() : Affiche la fenêtre

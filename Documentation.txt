@@ -98,3 +98,5 @@ SDL2 Réponses aux questions :
 15. La fonction SDL_RenderClear sert a effacer le contenu de la fenetre, la fonction SDL_RenderPresent sert a actualiser la fenetre pour afficher les elements.
 
 16. La fonction SDL_Delay(ms) est une fonction qui va mettre en pause le programme d'une durée donnée par l'utilisateur (en millisecondes)
+
+17. Une surface est un tableau de pixel qu'on peut manipuler un par un

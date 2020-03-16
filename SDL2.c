@@ -83,7 +83,7 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
         SDL_Renderer* renderer;//Déclaration du renderer
         SDL_Point cercleV, cercleP; //On déclare un point qu'on pourra utiliser plus tard dans le programme
         SDL_Rect rectangle, carV, carP; //On declare un rectangle qu'on pourra utiliser plus tard dans le programme
-        SDL_Surface *surface; //Déclaration d'une surface
+        SDL_Surface *surface, *temp = NULL; //Déclaration d'une surface
         int nLargeur=1280;
         int nHauteur=720;
 
@@ -128,8 +128,9 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
             SDL_RenderClear(renderer);
             SDL_RenderPresent(renderer);
 
-            surface = SDL_CreateRGBSurface(0, nLargeur, nHauteur, 32, 0, 0, 0, 0); //Creation de la surface
-            SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 0, 0, 0)); //On dessine dans la surface
+            surface = SDL_CreateRGBSurface(0, nLargeur, nHauteur, 32, 0, 0, 0, 255); //Creation de la surface
+            SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 0, 255, 0)); //On dessine dans la surface
+            SDL_BlitSurface(surface, &rectangle, temp, NULL);
 
             SDL_Delay(3000);
 

@@ -104,3 +104,5 @@ SDL2 Réponses aux questions :
 18. (Cf SDL2.c)
 
 19. (Cf SDL2.c)
+
+20. (Cf SDL2.c)

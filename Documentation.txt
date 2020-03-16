@@ -94,3 +94,5 @@ SDL2 Réponses aux questions :
 13. (Cf SDL2.c)
 
 14. Les fonction permettant de dessiner des points et des lignes sont respectivement les fonctions : SDL_RenderDrawPoint et SDL_RenderDrawLine
+
+15. La fonction SDL_RenderClear sert a effacer le contenu de la fenetre, la fonction SDL_RenderPresent sert a actualiser la fenetre pour afficher les elements.

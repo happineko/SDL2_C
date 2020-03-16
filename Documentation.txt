@@ -84,3 +84,5 @@ SDL2 Réponses aux questions :
 	SDL_ShowWindow() : Affiche la fenêtre
 
 9. Un Renderer est un moteur de rendu, il servira a afficher les elements sur notre fenetre
+
+10. SDL_Point sert a créer un point en 2D, et SDL_Rect sert a créer une forme rectangulaire, ce sont tous les deux des types

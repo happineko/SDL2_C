@@ -1,4 +1,4 @@
-//Question 9
+//Question 10
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -17,6 +17,8 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
         /* Création de la fenêtre */
         SDL_Window* pWindow = NULL; //On crée une variable fenetre de type SDL_Window
         SDL_Renderer* renderer;//Déclaration du renderer
+        SDL_Point point; //On déclare un point qu'on pourra utiliser plus tard dans le programme
+        SDL_Rect rectangle; //On declare un rectangle qu'on pourra utiliser plus tard dans le programme
 
         //Pour créer la fentre on utilise la fonction SDL_CreateWindow qui attend en parametre un nom,une position x, une position y, une largeur, une hauteur et un ou plusieurs flags (disponible sur le site de SDL dans ce cas la on veut just afficher la fenêtre)
         pWindow = SDL_CreateWindow("Fenetre SDL2",SDL_WINDOWPOS_UNDEFINED,

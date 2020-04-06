@@ -12,3 +12,6 @@ SDL Partie 2
 		-lSDL2
 		-lSDL2_image
 
+3) CF SDL2.c
+
+4) Un tileset est une série de sprite d'un meme personnage ou element décoratif par exemple, il sert principalement a faire des animations

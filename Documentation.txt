@@ -1,1 +1,3 @@
 SDL Partie 2
+
+1) L'API qu'il faut ajouter est SDL_Image, il va permettre d'ajouter des images de différents formats autre que le BMP et de charger ces images dans une SDL_Surface

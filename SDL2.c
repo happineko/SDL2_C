@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <SDL2\SDL.h>
+#include <SDL2\SDL_image.h>
+
 
 int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera renseigné argv est la liste des argument qu'il recevra
 {
@@ -15,10 +17,7 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
         /* Création de la fenêtre */
         SDL_Window* pWindow = NULL; //On crée une variable fenetre de type SDL_Window
         SDL_Renderer* renderer;//Déclaration du renderer
-        SDL_Point cercleV, cercleP; //On déclare un point qu'on pourra utiliser plus tard dans le programme
-        SDL_Rect rectangle, carV, carP, rTemp; //On declare un rectangle qu'on pourra utiliser plus tard dans le programme
-        SDL_Surface *surface, *temp = NULL; //Déclaration d'une surface
-        SDL_Texture *texture; //Declaration de la texture
+        SDL_Texture *image;
         int nLargeur=1280;
         int nHauteur=720;
 
@@ -31,15 +30,25 @@ int main(int argc, char** argv) //argc signifie le nombre d'argument qui sera re
 
         if( pWindow ) //si la fenetre a bien été créee
         {
-
+            renderer = SDL_CreateRenderer(pWindow, -1, SDL_RENDERER_ACCELERATED);
             if(renderer == NULL)//gestion des erreurs
             {
                 printf("Erreur lors de la creation d'un renderer : %s",SDL_GetError());
                 return EXIT_FAILURE;
             }
 
-                SDL_DestroyWindow(pWindow); //On "détruit" la fenetre
-                SDL_DestroyRenderer(renderer);
+            image = IMG_LoadTexture(renderer, "oie.png"); //on charge l'image en PNG
+            if (!image)
+            {
+                printf("Echec de chargement de la texture : %s", SDL_GetError());
+                return -1;
+            }
+            SDL_RenderCopy(renderer, image, NULL, NULL); //On applique la texture a tout l'ecran
+            SDL_RenderPresent(renderer);
+            SDL_Delay(1000);
+            SDL_DestroyWindow(pWindow); //On "détruit" la fenetre
+            SDL_DestroyRenderer(renderer);
+
             }
             else
             {
